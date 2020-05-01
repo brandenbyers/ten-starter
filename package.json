@@ -1,0 +1,30 @@
+{
+  "name": "ten-starter",
+  "version": "1.0.0",
+  "description": "Tailwind, Eleventy, and Netlify CMS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all clean build:css build:html",
+    "build:css": "postcss src/includes/css/tailwind.css -o src/css/styles.css",
+    "build:html": "eleventy",
+    "watch": "npm-run-all --parallel watch:css watch:html",
+    "watch:css": "postcss src/includes/css/tailwind.css -o src/css/styles.css --watch",
+    "watch:html": "ELEVENTY_ENV=development eleventy --serve --port=8181",
+    "debug": "DEBUG=* eleventy",
+    "clean": "del-cli dist",
+    "start": "npm-run-all build watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "del-cli": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-clean": "^1.1.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
