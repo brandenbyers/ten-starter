@@ -1,7 +1,7 @@
 {
-  "name": "ten-starter",
+  "name": "tens",
   "version": "1.0.0",
-  "description": "Tailwind, Eleventy, and Netlify CMS.",
+  "description": "Tailwind, Eleventy, and Netlify CMS starter.",
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all clean build:css build:html",
@@ -23,6 +23,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-anchor": "^5.2.7",
+    "markdown-it-container": "^2.0.0",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-github-headings": "^2.0.0",
