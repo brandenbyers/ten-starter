@@ -22,7 +22,7 @@ module.exports = function (config) {
     typographer: true
   }).use(markdownItAnchor, {
     className: 'anchor',
-    prefixHeadingsIds: false,
+    prefixHeadingIds: false,
     linkIcon: customLinkIcon,
   }).use(markdownItEmoji)
   .use(markdownItAbbr)
